@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Web</title>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
+    <!-- Preloader -->
+
+    <div id="preloader"></div>
+
+    <!-- Navbar -->
+
     <section class="header">
 
-        <nav>
+        <nav data-aos="fade-down">
             <a href="index.html"><img src="logo.png"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-xmark" onclick="hideMenu()"></i>
@@ -27,10 +35,12 @@
         </nav>
 
         <div class="text-box">
-            <h1>World's Biggest University</h1>
-            <p>Making website is now one of the easiest thing in the world.You just need to learn HTML,CSS and <br> Javascript and you are good to go.</p>
-            <a href="" class="hero-btn">Visit To Know More</a>
+            <h1 data-aos="fade-up">World's Biggest University</h1>
+            <p data-aos="fade-up">Making website is now one of the easiest thing in the world.You just need to learn HTML,CSS and <br> Javascript and you are good to go.</p>
+            <a href="" class="hero-btn" data-aos="fade-up">Visit To Know More</a>
         </div>
+
+        <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i></a>
 
     </section>
 
@@ -41,19 +51,19 @@
 
 <section class="course">
 
-    <h1>Courses We Offer</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h1 data-aos="fade-up">Courses We Offer</h1>
+    <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
     <div class="row">
-        <div class="course-col">
+        <div class="course-col" data-aos="fade-up">
             <h3>Intermediate</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cupiditate animi quo illo! Dolorem mollitia dignissimos cumque aliquid, blanditiis rerum sint quos voluptatem repellat minima illum.Ashfaq hero is very good commando.</p>
         </div>
-        <div class="course-col">
+        <div class="course-col" data-aos="fade-up">
             <h3>Degree</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cupiditate animi quo illo! Dolorem mollitia dignissimos cumque aliquid, blanditiis rerum sint quos voluptatem repellat minima illum.Ashfaq hero is very good commando.</p>
         </div>
-        <div class="course-col">
+        <div class="course-col" data-aos="fade-up">
             <h3>Post Graduation</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cupiditate animi quo illo! Dolorem mollitia dignissimos cumque aliquid, blanditiis rerum sint quos voluptatem repellat minima illum.Ashfaq hero is very good commando.</p>
         </div>
@@ -67,23 +77,23 @@
 
 <section class="campus">
 
-    <h1>Our Global Campus</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <h1 data-aos="fade-up">Our Global Campus</h1>
+    <p data-aos="fade-up">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
     <div class="row">
-        <div class="campus-col">
+        <div class="campus-col" data-aos="fade-up">
             <img src="bahria.jpg">
             <div class="layer">
                 <h3>BEHRIA</h3>
             </div>
         </div>
-        <div class="campus-col">
+        <div class="campus-col" data-aos="fade-up">
             <img src="karachi.jpg">
             <div class="layer">
                 <h3>KARACHI</h3>
             </div>
         </div>
-        <div class="campus-col">
+        <div class="campus-col" data-aos="fade-up">
             <img src="peshawar.jpg">
             <div class="layer">
                 <h3>PESHAWAR</h3>
@@ -100,21 +110,21 @@
 
 <section class="facilities">
 
-    <h1>Our Facilities</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h1 data-aos="fade-up">Our Facilities</h1>
+    <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
     <div class="row">
-        <div class="facilities-col">
+        <div class="facilities-col" data-aos="fade-up">
             <img src="library.jpg">
             <h3>World Class Library</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium ab repudiandae doloribus repent.</p>
         </div>
-        <div class="facilities-col">
+        <div class="facilities-col" data-aos="fade-up">
             <img src="playground.jpg">
             <h3>Largest Playground</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium ab repudiandae doloribus repent.</p>
         </div>
-        <div class="facilities-col">
+        <div class="facilities-col" data-aos="fade-up">
             <img src="cafeteria.jpg">
             <h3>Healthy And Tasty Food</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium ab repudiandae doloribus repent.</p>
@@ -129,11 +139,11 @@
 
 <section class="testimonials">
 
-    <h1>What Our Student Says</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <h1 data-aos="fade-up">What Our Student Says</h1>
+    <p data-aos="fade-up">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 
     <div class="row">
-        <div class="testimonials-col">
+        <div class="testimonials-col" data-aos="fade-up">
             <img src="mr.beast.jpg">
             <div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos fuga nobis, architecto soluta illo eveniet corrupti suscipit accusamus ex placeat quisquam.Veritatis odit voluptatibus explicabo ducimus.</p>
@@ -145,7 +155,7 @@
                 <i class="fa fa-star-o"></i>
             </div>
         </div>
-        <div class="testimonials-col">
+        <div class="testimonials-col" data-aos="fade-up">
             <img src="mr.jack.jpg">
             <div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos fuga nobis, architecto soluta illo eveniet corrupti suscipit accusamus ex placeat quisquam.Veritatis odit voluptatibus explicabo ducimus.</p>
@@ -162,23 +172,19 @@
 </section>
 
 
-
 <!-- call to action -->
 
 
-<section class="cta">
+<section class="cta" data-aos="fade-up">
 
     <h1>Enroll For Our Various Online Courses <br> Anywhere From The World</h1>
     <a href="" class="hero-btn">CONTACT US</a>
 
 </section>
 
-
-
 <!-- footer -->
 
-
-<section class="footer">
+<section class="footer" data-aos="fade-up">
 
     <h3>About Us</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsam nostrum, <br> aperiam consequuntur nemo quia iusto possimus minima enim modi.</p>
@@ -193,14 +199,15 @@
 </section>
 
 
-
-
-
-
-
-
-
 <!-- Javascript -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        offset: 120
+      });
+</script>
 
 <script>
 
@@ -212,10 +219,13 @@ function hideMenu(){
     navLinks.style.right = '-200px';
 }
 
+const loader = document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
+
 </script>
-
-
-
 
 </body>
 </html>

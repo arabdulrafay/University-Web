@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Web</title>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
+    <!-- Preloader -->
+
+    <div id="preloader"></div>
+
+    <!-- Navbar -->
+
     <section class="sub-header">
 
-        <nav>
+        <nav data-aos="fade-down">
             <a href="index.html"><img src="logo.png"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-xmark" onclick="hideMenu()"></i>
@@ -26,7 +34,9 @@
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
-        <h1>Our Courses</h1>
+        <h1 data-aos="fade-down">Our Courses</h1>
+
+        <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i></a>
 
     </section>
 
@@ -37,19 +47,19 @@
 
 <section class="course">
 
-    <h1>Courses We Offer</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h1 data-aos="fade-up">Courses We Offer</h1>
+    <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
     <div class="row">
-        <div class="course-col">
+        <div class="course-col" data-aos="fade-up">
             <h3>Intermediate</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cupiditate animi quo illo! Dolorem mollitia dignissimos cumque aliquid, blanditiis rerum sint quos voluptatem repellat minima illum.Ashfaq hero is very good commando.</p>
         </div>
-        <div class="course-col">
+        <div class="course-col" data-aos="fade-up">
             <h3>Degree</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cupiditate animi quo illo! Dolorem mollitia dignissimos cumque aliquid, blanditiis rerum sint quos voluptatem repellat minima illum.Ashfaq hero is very good commando.</p>
         </div>
-        <div class="course-col">
+        <div class="course-col" data-aos="fade-up">
             <h3>Post Graduation</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cupiditate animi quo illo! Dolorem mollitia dignissimos cumque aliquid, blanditiis rerum sint quos voluptatem repellat minima illum.Ashfaq hero is very good commando.</p>
         </div>
@@ -62,23 +72,23 @@
 <!-- facilities -->
 
 
-<section class="facilities">
+<section class="facilities" data-aos="fade-up">
 
-    <h1>Our Facilities</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h1 data-aos="fade-up">Our Facilities</h1>
+    <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
     <div class="row">
-        <div class="facilities-col">
+        <div class="facilities-col" data-aos="fade-up">
             <img src="library.jpg">
             <h3>World Class Library</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium ab repudiandae doloribus repent.</p>
         </div>
-        <div class="facilities-col">
+        <div class="facilities-col" data-aos="fade-up">
             <img src="playground.jpg">
             <h3>Largest Playground</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium ab repudiandae doloribus repent.</p>
         </div>
-        <div class="facilities-col">
+        <div class="facilities-col" data-aos="fade-up">
             <img src="cafeteria.jpg">
             <h3>Healthy And Tasty Food</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium ab repudiandae doloribus repent.</p>
@@ -88,14 +98,10 @@
 </section>
 
 
-
-
-
-
 <!-- footer -->
 
 
-<section class="footer">
+<section class="footer" data-aos="fade-up">
 
     <h3>About Us</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsam nostrum, <br> aperiam consequuntur nemo quia iusto possimus minima enim modi.</p>
@@ -110,14 +116,15 @@
 </section>
 
 
-
-
-
-
-
-
-
 <!-- Javascript -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        offset: 120
+      });
+</script>
 
 <script>
 
@@ -129,9 +136,13 @@ function hideMenu(){
     navLinks.style.right = '-200px';
 }
 
+const loader = document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
+
 </script>
-
-
 
 
 </body>
